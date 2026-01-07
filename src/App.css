@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  text-align: center;
+  padding-top: 80px; /* leave space for fixed navbar */
+  min-height: 100vh;
+}
+
+/* Hero / Intro Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.hero .intro {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hire-me-btn:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
+
+/* Sections (About, Services, Contact) */
+section {
+  padding: 80px 20px;
+  color: #333;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hire-me-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
